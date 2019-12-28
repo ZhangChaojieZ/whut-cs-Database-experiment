@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {space :0:748:x}"
+			"$verticalGroup": "par l {space :0:433:x}"
+		} ) {
+			name: "this"
+			"title": "管理员界面"
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "managerMenuBar"
+				"preferredSize": new java.awt.Dimension( 100, 30 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "CourseInfoMenu"
+					"text": "课程管理"
+					"preferredSize": new java.awt.Dimension( 90, 25 )
+					"font": new java.awt.Font( "楷体", 0, 16 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "courInfoMenuItem"
+						"text": "课程管理"
+						"preferredSize": new java.awt.Dimension( 90, 21 )
+						"font": new java.awt.Font( "楷体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "courInfoMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "scInfoMenuItem"
+						"text": "选课管理"
+						"preferredSize": new java.awt.Dimension( 90, 25 )
+						"font": new java.awt.Font( "楷体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "scInfoMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "csInfoMenuItem"
+						"text": "课程安排管理"
+						"preferredSize": new java.awt.Dimension( 90, 25 )
+						"font": new java.awt.Font( "楷体", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "csInfoMenuItemActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 750, 495 )
+		} )
+	}
+}

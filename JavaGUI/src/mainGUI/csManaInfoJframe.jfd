@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x, seq t {space ::325:x, comp checkBoxSelSwitch:::p:95:p, space :p:318:p}}"
+			"$verticalGroup": "par l {seq l {comp panel1:::::x, space s:::p, comp checkBoxSelSwitch:::p:30:p, space :p:46:p}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp scrollPane1::t::738:x}"
+				"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::468:x}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "csInfotable"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+							add( "课程安排编号" )
+							add( "课程名称" )
+							add( "教师编号" )
+							add( "教师姓名" )
+							add( "起止周" )
+							add( "上课天次" )
+							add( "上课课次" )
+							add( "上课地点" )
+							add( "课程容量" )
+							add( "已选人数" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "checkBoxSelSwitch"
+				"text": "开/关选课"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "checkBoxSelSwitchActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 740, 600 )
+		} )
+	}
+}

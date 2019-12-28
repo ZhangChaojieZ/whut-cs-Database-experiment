@@ -1,0 +1,76 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp baseJPanel::l:::x, seq l {space :p:152:p, comp selectCoursebutton:::p::p, space ::624:x}}"
+			"$verticalGroup": "par l {seq l {comp baseJPanel:::p::p, space s:::p, comp selectCoursebutton:::p::p, space :0:37:x}}"
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {comp selectCoursescrollPane::::822:x, space :::p}}"
+				"$verticalGroup": "par l {seq l {comp selectCoursescrollPane:::p::p, space :0:46:x}}"
+			} ) {
+				name: "baseJPanel"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "selectCoursescrollPane"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "courseScheduleList"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+							add( "课程编号" )
+							add( "课程名称" )
+							add( "上课老师" )
+							add( "起止周" )
+							add( "上课天次" )
+							add( "上课课次" )
+							add( "上课地点" )
+							add( "容量" )
+							add( "已选人数" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist0" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist1" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist2" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist3" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist4" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist5" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist6" ], 0, 0, 0, true ) )
+							add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "cslist7" ], 0, 0, 0, true ) )
+						} )
+						"font": new java.awt.Font( "楷体", 0, 16 )
+						"selectionBackground": new java.awt.Color( 57, 105, 138, 255 )
+					} )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "selectCoursebutton"
+				"text": "选课"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "selectCoursebuttonMouseClicked", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 830, 585 )
+		} )
+	}
+}

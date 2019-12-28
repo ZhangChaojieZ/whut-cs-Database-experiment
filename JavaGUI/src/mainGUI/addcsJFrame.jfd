@@ -1,0 +1,104 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {par l {seq l {space :p:50:p, comp labelcsno:::p::p}, seq t {space :::p, par l {comp labelcsSE::l:p:54:p, par l:::p {comp label7::t:::x, comp labelcTime::t:::x, comp labelcAdr::t:::x, comp label1::t:p::p, comp label2::t:p::p}}}}, space :p:34:p, par l {seq {comp label5:::p::p, space :::p, comp comboBoxday:::p:63:p, space s:::p, comp textFieldclass:::p::p, space :::p, comp label6:::p::p}, par t:l::p {comp textFieldcsno::l:::x, comp textFieldcsSE::l:::x, comp textFieldcno::l:::x}, par t:l::p {comp textFieldselNum::l:::x, comp textFieldcapac::l:::x, comp textFieldAdress::l:::x}}}, seq l {space :p:186:p, comp buttonOK:::p:91:p}}, space ::57:x}}"
+			"$verticalGroup": "par l {seq l {space :p:31:p, par b {comp label7::b:p::p, comp textFieldcno::b:p:40:p}, space :::p, par b {comp labelcsno::b:p:40:p, comp textFieldcsno::b:p:40:p}, space s:::p, par b {comp textFieldcsSE::b:p:40:p, comp labelcsSE::b:p:30:p}, space s:::p, par b {comp label5::b:p::p, comp comboBoxday::b:p:40:p, comp textFieldclass::b:p:40:p, comp label6::b:p::p, comp labelcTime::b:p:33:p}, space s:::p, par b {comp textFieldAdress::b:p:40:p, comp labelcAdr::b:p:29:p}, space s:::p, par b {comp textFieldcapac::b:p:40:p, comp label1::b:p::p}, space u:::p, par b {comp textFieldselNum::b:p:40:p, comp label2::b:p::p}, space :p:65:p, comp buttonOK:::p:38:p, space ::41:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcsno"
+				"text": "课程安排编号"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcsSE"
+				"text": "  起止周"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcTime"
+				"text": "上课时间"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcAdr"
+				"text": "上课地点"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonOK"
+				"text": "确认添加"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "button1MouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcsno"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcsSE"
+				"columns": 15
+				"preferredSize": new java.awt.Dimension( 171, 40 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldclass"
+				"columns": 10
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldAdress"
+				"columns": 15
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "星期"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "节"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "comboBoxday"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "一"
+					addElement( "一" )
+					addElement( "二" )
+					addElement( "三" )
+					addElement( "四" )
+					addElement( "五" )
+					addElement( "六" )
+					addElement( "日" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "课程编号"
+				"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcno"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "课程容量"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcapac"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "textFieldcapacMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "已选人数"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldselNum"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 0 )
+			"size": new java.awt.Dimension( 475, 580 )
+		} )
+	}
+}

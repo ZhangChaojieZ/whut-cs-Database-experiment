@@ -1,0 +1,90 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p::p, comp loginPane:::p::p, space :::x}}"
+			"$verticalGroup": "par l {seq l {space :p::p, comp loginPane:::p::p, space ::27:x}}"
+		} ) {
+			name: "this"
+			"font": new java.awt.Font( "宋体", 0, 12 )
+			"alwaysOnTop": true
+			"title": "教务管理信息系统"
+			auxiliary() {
+				"JavaCodeGenerator.preCreateCode": "ButtonGroup btGroup"
+			}
+			addEvent( new FormEvent( "java.awt.event.WindowListener", "windowClosed", "thisWindowClosed", true ) )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space ::41:x, par l {seq t {comp passwordLabel:::p:36:p, space :p:15:p}, seq t {comp nameLabel:::p::p, space s:::p}}, par l {comp passwordtextField:::p:240:p, comp nametextField:::::x}, space ::100:x}, seq l {space :p:90:p, par l {comp loginButton:::p:101:p, seq {comp sturadioButton:::p:61:p, space :p:42:p, comp tearadioButton:::p::p, space :p:38:p, comp manaradioButton:::p::p}}, space ::106:x}}"
+				"$verticalGroup": "par l {seq l {space :p:20:p, par b {comp nametextField::b:p:40:p, comp nameLabel::b:p:40:p}, space :p:18:p, par b {comp passwordtextField::b:p:40:p, comp passwordLabel::b:p:30:p}, space ::23:x, par b {comp sturadioButton::b:p::p, comp tearadioButton::b:p::p, comp manaradioButton::b:p::p}, space :p:34:p, comp loginButton:::p:41:p}}"
+			} ) {
+				name: "loginPane"
+				"border": new javax.swing.border.EmptyBorder( 12, 12, 12, 12 )
+				auxiliary() {
+					"JavaCodeGenerator.postCreateCode": "ButtonGroup btGroup = new ButtonGroup();"
+				}
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "tearadioButton"
+					"text": "教师"
+					"font": new java.awt.Font( "楷体", 0, 16 )
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "btGroup.add(this.tearadioButton);"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "manaradioButton"
+					"text": "管理员"
+					"font": new java.awt.Font( "楷体", 0, 16 )
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "btGroup.add(this.manaradioButton);"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "sturadioButton"
+					"text": "学生"
+					"selected": true
+					"font": new java.awt.Font( "楷体", 0, 16 )
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "btGroup.add(this.sturadioButton);"
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "nametextField"
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "/*nametextField.setText(\"请输入账号\");\nnametextField.setEditable(false);\nnametextField.setBackground(Color.WHITE);\nnametextField.setForeground(Color.lightGray);*/"
+					}
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "nametextFieldMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "nameLabel"
+					"text": "  用户名"
+					"font": new java.awt.Font( "楷体", 0, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "passwordLabel"
+					"text": "密码"
+					"background": new java.awt.Color( 51, 204, 255, 255 )
+					"font": new java.awt.Font( "楷体", 0, 16 )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordtextField"
+					"font": new java.awt.Font( "宋体", 0, 12 )
+					auxiliary() {
+						"JavaCodeGenerator.postCreateCode": "/*passwordtextField.setText(\"请输入密码\");\npasswordtextField.setEditable(false);\npasswordtextField.setBackground(Color.WHITE);\npasswordtextField.setForeground(Color.lightGray);*/"
+					}
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "passwordtextFieldMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "loginButton"
+					"text": "登录"
+					"font": new java.awt.Font( "楷体", 0, 18 )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "loginButtonMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 475, 325 )
+		} )
+	}
+}

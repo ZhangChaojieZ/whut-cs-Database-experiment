@@ -1,0 +1,83 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::l:::x}"
+		} ) {
+			name: "this"
+			auxiliary() {
+				"JavaCodeGenerator.postInitCode": "///zzzzzxxx"
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:245:p, comp agreeCourbutton:::p:96:p, space :p:169:p, comp buttonaddCs:::p::p, space ::247:x}, seq t {space :::p, comp scrollPane1::::851:x, space :::p}}"
+				"$verticalGroup": "par l {seq l {space :::p, comp scrollPane1::::454:x, space u:::p, par b {comp buttonaddCs::b:p:40:p, comp agreeCourbutton::b:p:40:p}, space :p:31:p}}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTable" ) {
+						name: "coursetable"
+						"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+							add( "课程编号" )
+							add( "课程名称" )
+							add( "课程性质" )
+							add( "课程状态" )
+							add( "学分" )
+							add( "学时数" )
+							add( "开课学期" )
+							add( "教师编号" )
+							add( "学院编号" )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						}, new java.util.Vector {
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+							add( null )
+						} )
+						"font": new java.awt.Font( "Microsoft YaHei UI", 0, 14 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "agreeCourbutton"
+					"text": "同意开课"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "selectSwitchbuttonMouseClicked", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "buttonaddCs"
+					"text": "添加课程安排"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonaddCsMouseClicked", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 865, 575 )
+		} )
+	}
+}

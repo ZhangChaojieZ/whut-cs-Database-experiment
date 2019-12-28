@@ -1,0 +1,25 @@
+#######DBCP配置文件##########
+#驱动名
+driverClassName=com.mysql.jdbc.Driver
+#url
+url=jdbc:mysql://localhost:3306/eduadmin_db
+#用户名
+username=root
+#密码
+password=0121708910310
+#初试连接数
+initialSize=10
+#最大活跃数
+maxTotal=30
+#最大空闲连接数
+maxIdle=8
+#最小空闲连接数
+minIdle=0
+#最长等待时间(毫秒)
+maxWaitMillis=12000
+#JDBC驱动建立连接时附带的连接属性属性的格式必须为这样：[属性名=property;]
+#注意："user" 与 "password" 两个属性会被明确地传递，因此这里不需要包含他们。
+connectionProperties=useUnicode=true;characterEncoding=utf8
+
+#指定由连接池所创建的连接的自动提交（auto-commit）状态。
+defaultAutoCommit=false

@@ -1,0 +1,117 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:88:p, par l {comp label1:::p::p, seq {par t {comp labelcName:::p::p, comp labelteaName:::p::p, comp labelcColl:::p::p, comp labelcTerm::t:p::p, comp labelcSta::t:p::p, comp labelcCre::t:p::p, comp labelcHour::t:p::p}, space :p:35:p, par l {par l:::p {comp cCollcomboBox:::p::p, comp textFieldcName::l::175:x, comp teaNametextField::l::175:x}, seq l {space :6:6:p, par l {comp buttonsubmit:::p::p, par l:::p {comp cTermcomboBox:::p::p, comp cStacomboBox::l:::x, comp cCretextField::l:::x, comp cHourtextField::l:::x}}}}}}, space ::192:x}}"
+			"$verticalGroup": "par l {seq l {space :p:28:p, par b {comp textFieldcName::b:p::p, comp labelcName::b:p::p}, space u:::p, par b {comp teaNametextField::b:p::p, comp labelteaName::b:p::p}, space :::p, par b {comp cCollcomboBox::b:p::p, comp labelcColl::b:p::p}, space s:::p, par b {comp labelcTerm::b:p::p, comp cTermcomboBox::b:p::p}, space s:::p, par b {comp labelcSta::b:p::p, comp cStacomboBox::b:p::p}, space s:::p, par b {comp labelcCre::b:p::p, comp cCretextField::b::36:x}, space s::21:x, par b {comp labelcHour::b:p::p, comp cHourtextField::b:p:38:p}, space :p:50:p, par b {comp buttonsubmit::b:p::p, comp label1::b:p::p}, space :p:93:p}}"
+		} ) {
+			name: "this"
+			auxiliary() {
+				"JavaCodeGenerator.preCreateCode": "Course cour;\n// zzzzzz"
+			}
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcName"
+				"text": "课程名"
+				auxiliary() {
+					"JavaCodeGenerator.variableLocal": false
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "textFieldcName"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcColl"
+				"text": "开课学院"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcSta"
+				"text": "课程性质"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcCre"
+				"text": "学分数"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcHour"
+				"text": "课时数"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cCollcomboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "0100"
+					addElement( "0100" )
+					addElement( "0200" )
+					addElement( "0300" )
+					addElement( "0400" )
+					addElement( "0500" )
+					addElement( "0600" )
+					addElement( "0700" )
+					addElement( "0800" )
+					addElement( "0900" )
+					addElement( "1000" )
+					addElement( "1100" )
+					addElement( "1200" )
+					addElement( "计算机科学与技术学院" )
+					addElement( "信息工程学院" )
+					addElement( "资环学院" )
+					addElement( "经济学院" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cStacomboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "专业必修"
+					addElement( "专业必修" )
+					addElement( "专业选修" )
+					addElement( "公选课" )
+					addElement( "个性课" )
+					addElement( "实践课" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cHourtextField"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cTermcomboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "大一上"
+					addElement( "大一上" )
+					addElement( "大一下" )
+					addElement( "大二上" )
+					addElement( "大二下" )
+					addElement( "大三上" )
+					addElement( "大三下" )
+					addElement( "大四上" )
+					addElement( "大四下" )
+				}
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelcTerm"
+				"text": "开课学期"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "labelteaName"
+				"text": "职工号"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "teaNametextField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "cCretextField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "buttonsubmit"
+				"text": "提交申请"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "buttonsubmitMouseClicked", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 5, 5 )
+			"size": new java.awt.Dimension( 540, 550 )
+		} )
+	}
+}

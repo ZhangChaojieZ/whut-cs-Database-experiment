@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.3" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:84:p, comp welcomelabel:::p:583:p, space ::86:x}}"
+			"$verticalGroup": "par l {seq l {space :p:139:p, comp welcomelabel:::p:73:p, space ::216:x}}"
+		} ) {
+			name: "this"
+			"title": "学生界面"
+			"minimumSize": new java.awt.Dimension( 80, 40 )
+			"font": new java.awt.Font( "Dialog", 0, 12 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "welcomelabel"
+				"text": "         欢迎来到教务管理系统      "
+				"font": new java.awt.Font( "楷体", 0, 30 )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "stuMenuBar"
+				"preferredSize": new java.awt.Dimension( 176, 30 )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "courseMenu"
+					"text": "课程信息"
+					"font": new java.awt.Font( "楷体", 0, 16 )
+					"preferredSize": new java.awt.Dimension( 75, 25 )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "SCMenuItem"
+						"text": "选课"
+						"preferredSize": new java.awt.Dimension( 75, 25 )
+						"font": new java.awt.Font( "楷体", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SCMenuItemActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "SdCMenuItem"
+						"text": "已选课程"
+						"font": new java.awt.Font( "楷体", 0, 16 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SdCMenuItemActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 755, 490 )
+		} )
+	}
+}
